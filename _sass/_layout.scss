@@ -1,0 +1,157 @@
+//bower:scss
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../bower_components/neat/app/assets/stylesheets/_neat.scss";
+
+//endbower
+html,
+body {
+  height: 100%;
+}
+body {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/**
+ * Site header
+ */
+.site-header {
+  width: 100%;
+}
+
+.title-wrapper {
+  width: 240px;
+}
+.title-row {
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 2px solid $text-color;
+  letter-spacing: 4px;
+}
+.subtitle-row {
+  padding: 15px;
+  border: 2px solid $text-color;
+  border-top: 0;
+  font-style: italic;
+  font-size: 0.7em;
+  text-align: center;
+}
+.site-title {
+  font-family: $header-font-family;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-bottom: 0;
+  color: $brand-color;
+  &,
+  &:visited {
+    color: $brand-color;
+  }
+}
+.site-nav {
+  line-height: 56px;
+  display: inline-block;
+  padding: 20px;
+  float: left;
+  width: 240px;
+}
+.menu-icon {
+  display: none;
+}
+.page-link {
+  color: $text-color;
+  line-height: $base-line-height;
+  font-style: italic;
+  text-transform: lowercase;
+  display: block;
+  border-bottom: 2px solid $background-color;
+  
+  // Gaps between nav items, but not on the last one
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &:visited {
+    color: $text-color;
+  }
+  &:hover {
+    border-bottom: 2px solid darken($brand-color, 20%);
+    text-decoration: none;
+  }
+}
+.current-link {
+  border-bottom: 2px solid $brand-color;
+}
+/**
+ * Site footer
+ */
+.site-footer {
+  text-align: center;
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+  clear: both;
+  font-style: italic;
+  font-size: $small-font-size;
+}
+/**
+ * Page content
+ */
+.page-content {
+  padding: 20px 20px;
+  display: inline-block;
+  float: left;
+}
+.page-heading {
+  font-size: 20px;
+}
+.post-list {
+  margin-left: 0;
+  list-style: none;
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+.post-link {
+  display: block;
+  font-size: 24px;
+}
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+  @include media-query($on-laptop) {
+    font-size: 36px;
+  }
+}
+.post-content {
+  margin-bottom: $spacing-unit;
+  h2 {
+    font-size: 32px;
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+  }
+  h3 {
+    font-size: 26px;
+    @include media-query($on-laptop) {
+      font-size: 22px;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    @include media-query($on-laptop) {
+      font-size: 18px;
+    }
+  }
+}
