@@ -5,4 +5,4 @@ permalink: /whylocal/
 published: true
 ---
 
-This is all about why local, cause is great
+This is all about why local, cause is great, and stuff
