@@ -5,4 +5,12 @@ permalink: /whylocal/
 published: true
 ---
 
-This is all about why local, cause is great, and stuff gufdafucker
+##This is an heading
+###This is also a heading
+
+
+
+
+
+
+This is all about why local, cause is great, and stuff
